@@ -9,7 +9,7 @@
 - Skip-gram model 은 NNLM 모델을 개선한 것으로,  어떤 단어의 표현은 그 주변의 단어들에 의해서 표현된다는 가설 아래,  주변 단어들을 예측하는 목적 함수로 word vector reperesentation을 학습하는 알고리즘입니다.
 - Skip-gram의 목적함수는 기본적으로 cross-entropy 를 사용합니다. 계산비용이 큰 소프트맥스 대신에 네거티브 샘플링을 통해 binary cross entropy를 하여 가까운 단어-먼 단어벡터를 학습합니다.
 
-![Untitled](AI%20Tech%20Interview%20for%20NLP%20504ef01f01664e33941375765edd7e53/Untitled.png)
+![Untitled](./img/Untitled.png)
 
 ### (꼬리)→ Noise Contrastive Estimation이 무엇인가요?
 
@@ -38,11 +38,11 @@
 
 - **추가 자료**
     
-    ![Untitled](AI%20Tech%20Interview%20for%20NLP%20504ef01f01664e33941375765edd7e53/Untitled%201.png)
+    ![Untitled](./img/Untitled1.png)
     
-    ![Untitled](AI%20Tech%20Interview%20for%20NLP%20504ef01f01664e33941375765edd7e53/Untitled%202.png)
+    ![Untitled](./img/Untitled2.png)
     
-    ![Untitled](AI%20Tech%20Interview%20for%20NLP%20504ef01f01664e33941375765edd7e53/Untitled%203.png)
+    ![Untitled](./img/Untitled3.png)
     
 
 **[출처]**
