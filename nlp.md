@@ -31,18 +31,13 @@
 2) **RNN과의 차별점**은 무엇인가요?
 
 - 먼저, 레이어마다 시간복잡도, sequential 정보를 얻기 위해 최소 계산해야하는 수에 차이가 납니다.
-- Recurrent 모델의 경우 시퀀셜한 학습 예제들의 병렬적 계산이 어렵다. 그 이유는 구조가 $h_t$를 만들기 위해서 $h_{t-1}$를 입력으로 받아 계산하기 때문이다.
+- Recurrent 모델의 경우 시퀀셜한 학습 예제들의 병렬적 계산이 어렵다. 그 이유는 구조가 $h_t$를 만들기 위해서 $h_{t-1}$를 입력으로 받아 계산하기 때문이다 (추가자료를 통해 확인).
 - 이 때문에, 긴 시퀀스에 대해서 메모리에 제한이 있을 수밖에 없고, 이를 위해 여러 트릭들(e.g, factorization, conditional computation)을 사용하지만 한계가 있다.
 - Attention 메커니즘은 input-output간 global dependency에 대해, 병렬화를 통해 해결했다.
-- Self-attention 메커니즘을 통해, 각 시퀀스 마다 병렬적으로 계산하므로써
 
 - **추가 자료**
     
-    ![Untitled](./img/Untitled1.png)
-    
     ![Untitled](./img/Untitled2.png)
-    
-    ![Untitled](./img/Untitled3.png)
     
 
 **[출처]**
@@ -149,16 +144,11 @@
         - Epoch 마다 mask의 pattern을 generation하며, 40epochs에서 10번 정도를 진행함.
         - 코퍼스 크기기 클 수록, 더 많은 스텝을 학습할 수록 강력.
     
-    - Refering code
+    - [Refering code](https://github.com/huggingface/transformers/blob/cab7799f7b9ca7fade2265da701dac3f4f394367/src/transformers/data/data_collator.py)
         
-        ```python
-        # https://github.com/huggingface/transformers/blob/
-        # cab7799f7b9ca7fade2265da701dac3f4f394367/src/transformers/data/data_collator.py
-        
-        ```
         
     - FULL-SENTENCES without NSP
-        - 4가지 조합을 실험.
+        - 4가지 조합을 실험함.
 
 | SentencePair+NSP | Same BERT |
 | --- | --- |
@@ -180,11 +170,3 @@
 ### Generation을 위한 Decoding methods를 말씀해주세요.
 
 - (준비중)
-
-참고 자료 : [https://github.com/huggingface/tokenizers/tree/102dfe87a3bf590dcb888f4f4644ad32def8c464/bindings/python/py_src/tokenizers/implementations](https://github.com/huggingface/tokenizers/tree/102dfe87a3bf590dcb888f4f4644ad32def8c464/bindings/python/py_src/tokenizers/implementations)
-
-### BART vs GPT-2를 비교해주세요.
-
-- (준비중)
-
-참고 : [https://arxiv.org/pdf/1910.13461.pdf](https://arxiv.org/pdf/1910.13461.pdf)
