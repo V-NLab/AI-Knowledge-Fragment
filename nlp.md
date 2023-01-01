@@ -170,11 +170,3 @@
 ### Generation을 위한 Decoding methods를 말씀해주세요.
 
 - (준비중)
-
-참고 자료 : [https://github.com/huggingface/tokenizers/tree/102dfe87a3bf590dcb888f4f4644ad32def8c464/bindings/python/py_src/tokenizers/implementations](https://github.com/huggingface/tokenizers/tree/102dfe87a3bf590dcb888f4f4644ad32def8c464/bindings/python/py_src/tokenizers/implementations)
-
-### BART vs GPT-2를 비교해주세요.
-
-- (준비중)
-
-참고 : [https://arxiv.org/pdf/1910.13461.pdf](https://arxiv.org/pdf/1910.13461.pdf)
